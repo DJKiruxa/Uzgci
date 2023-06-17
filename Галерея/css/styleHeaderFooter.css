@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+/* хедер */
+header {
+	display: table;
+	height: 17% ;
+	width: 100%;
+	background-color: #FFF85A;
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	
+	margin-left: 13%;
+	margin-right: 13%;
+}
+.menu__list{
+	display: flex;
+	
+	width: 100%;
+	
+	
+	padding-left: 3%;
+	
+}
+
+.header_logo_png{
+	max-width: 13%;
+	width: 70%; 
+	height: auto;
+
+
+}
+.header_logo_png img {
+	width: 90%
+}
+
+.menu__item{
+	font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 59px;
+	
+	margin: auto;
+
+}
+
+#active__link{
+	color:#323232;
+	position:relative;
+}
+@keyframes  HeaderAnimation{
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.menu__list #active__link::after{
+	content:'';
+  	position:absolute;
+  	bottom:-2px;
+  	left:25%;
+  	right:25%;
+  	background: #000000;
+  	height:2px;
+  	border-radius:10px 10px 10px 10px;
+	
+	animation: 0.25s ease-out 0s 1 HeaderAnimation;
+	
+}
+
+
+
+.menu__item a {
+	color:#000000;
+	transition: all 0.5s;
+}
+
+
+
+.menu__item a:hover {
+	color:#323232;
+	transition: all 0.5s;
+}
+
+.menu__section{
+	width: 100%;
+	
+	display: flex;
+	align-items: center;
+}
+
+
+
+/* скрываем чекбокс */
+#menu__toggle {
+	opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+	display: flex; /* используем flex для центрирования содержимого */
+	align-items: center;  /* центрируем содержимое кнопки */
+	position: relative;
+	top: -10px;
+	width: 50px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #FFF85A;
+  }
+  .menu__btn > span::before {
+	content: '';
+	top: -8px;
+  }
+  .menu__btn > span::after {
+	content: '';
+	top: 8px;
+  }
+
+  
+.footer_content{
+    background-color: black;
+	
+	
+}
+.img3{
+	width: 100%;
+}
+.footer_container{
+
+	display: flex;
+	justify-content: space-between;
+	margin-left: 13%;
+	margin-right: 13%;
+	padding-top: 6%;
+}
+
+.footer_logo_png{
+	max-width: 235px;
+	width: 100%; 
+	height: auto;
+}
+.footer_logo_png img{
+	width: 50%
+}
+
+
+.footer_menu_list{
+	display:flex;
+}
+
+.menu_column{
+	display: block;
+}
+
+.footer_menu_list #active__link{
+	color: white;
+	
+}
+
+.footer_menu_list .menu__item{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 10px;
+	padding-left: 80px;
+}
+
+.legal_inf{
+	display: flex;
+	margin-left: 13%;
+	margin-right: 13%;
+	
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color:#828282;
+}
+.legal_inf p{
+	padding-right: 50px;
+	padding-bottom: 7%;
+}
+
+
+.goog-te-gadget-icon {
+	display:none;
+  }
+ 
+  
+  body > .skiptranslate > iframe.skiptranslate {
+	display: none !important;
+	visibility: hidden !important;
+  }
+  .goog-te-gadget-simple {
+	  background-color: #ffffff !important;
+	  border:0 !important;
+	
+	
+	  display: inline-block;
+	  
+	  cursor: pointer;
+	  zoom: 1;
+  }
+  
+  .goog-te-gadget-simple  span {
+	 color:#828282 !important;
+	 font-family: 'Montserrat'!important;
+	 font-style: normal!important;
+	 font-weight: 400!important;
+	 font-size: 125%!important;
+  
+  }
+   
+
+

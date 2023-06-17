@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SDKLQBEG4N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SDKLQBEG4N');
+</script>
+<script>
+	// Find all placeholders
+var placeholders = document.querySelectorAll('input[placeholder]');
+console.log("Here start")
+if (placeholders.length) {
+     // convert to array
+    placeholders = Array.prototype.slice.call(placeholders);
+
+    // copy placeholder text to a hidden div
+    var div = $('<div id="placeholders" style="display:none;"></div>');
+
+    placeholders.forEach(function(input){
+      var text = input.placeholder;
+      div.append('<div>' + text + '</div>');    
+    });
+
+    $('body').append(div);
+
+    // save the first placeholder in a closure
+    var originalPH = placeholders[0].placeholder;
+
+    // check for changes and update as needed
+    setInterval(function(){
+      if (isTranslated()) {
+        updatePlaceholders();
+        originalPH = placeholders[0].placeholder;
+      }
+    }, 500);
+
+    // hoisted ---------------------------
+    function isTranslated() { // true if the text has been translated
+       var currentPH = $($('#placeholders > div')[0]).text();
+       return !(originalPH == currentPH);
+    }
+
+    function updatePlaceholders() {
+      $('#placeholders > div').each(function(i, div){
+        placeholders[i].placeholder = $(div).text();
+      });
+    }
+}
+console.log("Here end")
+</script>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/styleHeaderFooter.css">
+	<link rel="stylesheet" type="text/css" href="/css/styleHome.css">
+	<link rel="import" href="/public/Article.html">
+	<link type="image/x-icon" href="../img/Header/LOGO_black_tr_withot_text.png" rel="shortcut icon">
+	<link type="Image/x-icon" href="../img/Header/LOGO_black_tr_withot_text.png" rel="icon">
+</head>
+<!-- Google tag (gtag.js) -->
+
+<body>
+	<header class="header">
+		<nav class="menu">
+			
+			
+			<div class = "menu__section">
+			<ul class="menu__list">
+				 
+				<li class="menu__item"><a id = "active__link" href="index.html">Главная</a></li>
+				<li class="menu__item"><a  href="https://forms.gle/reVvUG4c9cZiAkuR8">Обратная связь</a></li>
+				<div class="header_logo_png"><img src="../img/LOGO_black_tr_withot_text.png" 
+					alt="Что-то сработало не так"> </div>
+				<li class="menu__item"><a href="/Instruction/Inst.html">Инструкция</a></li>
+				<li class="menu__item"><a href="/Галерея/galery.html">Галерея</a></li>
+				<!--<li class="menu__item">
+					
+				
+					</script>
+					<div id="google_translate_element"></div>
+
+						<script type="text/javascript">
+						function googleTranslateElementInit() {
+						new google.translate.TranslateElement(
+							{pageLanguage: 'en', includedLanguages: "en,mk", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+						}
+						</script>
+
+						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+					
+				</li>
+				
+				 <li class="menu__item"><a href="/public/Projects.html">Projects</a></li>
+				<li class="menu__item"><a href="/public/Analytics.html">Analytics</a></li>
+				<li class="menu__item"><a href="/public/Contacts.html">Contacts</a></li>
+				<li class="menu__item"><a href="/public/AboutUs.html">About us</a></li>-->
+			</ul>
+			
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				  <span></span>
+				</label>
+			</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class = "first__section">
+			<div class = "first__section_content">
+				<div class = first__section_text>
+					<h1 class = "first__section_header">
+						Почувствуй энергию свободы
+					</h1>
+					
+					
+				</div>
+				
+				<div class = first__section_text_2>
+
+					<p>
+						Портативное устройство для выработки электроэнергии из ветра
+					</p>
+
+				</div>
+					
+			
+			</div>
+			<div class = "More_news_Button_sec">
+			<a class = "More_news_Button" href="https://forms.gle/reVvUG4c9cZiAkuR8"> 
+				Заказать
+				
+			</a>
+		</div>
+		</div>
+		<div class="second__section">
+			<div class="second__section_content">
+				<div class="second__section_header">
+					
+					<a class = "More_news_Button" href="Команда/comand.html"><h2 class = "second__section_header_h2">Кто мы?</h2></a>
+					
+				</div>
+				<div class = "second__section_content_2">
+					<div >
+						
+						<p class = second__section_text>
+							Мы команда ПЭС, группа инициативных студентов Московского Политехнического университета
+
+
+
+						</p>
+						
+					</div>
+					
+					<div class = second__section_text_2>
+						
+						<img class = "img1" src="../img/logo.png" 
+						alt="Что-то сработало не так">
+					</div>
+					<div class = second__section_text_3>
+						<img class="img2" src="../img/logo1.png" 
+						alt="Что-то сработало не так"> 
+	
+					</div>
+						
+				
+				</div>
+						
+						
+						
+				
+				
+			</div>
+				
+			</div>
+		</div>
+		<div class = "first__section">
+			<div class = "third__section_content">
+				<div class = first__section_text>
+					<img class="img4" src="img/скрин11-transformed 1.png">
+					
+					
+				</div>
+				
+				<div class = first__section_text_3>
+
+					<p>
+						Какие-то тех.характеристики 
+					</p>
+
+				</div>
+					
+			
+			</div>
+			
+			
+		</div>
+		</div>
+	</main>
+	<footer>
+		<img class="img3" src = "img/Slide 16_9 - 34.png">
+		
+	</footer>
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

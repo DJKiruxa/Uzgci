@@ -1,0 +1,113 @@
+h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+body {
+    background-color:#464644;
+}
+header {
+    margin-bottom: 50px;
+}
+.container {
+   min-width: 100%;
+}
+section {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+.section_persons_h1 {
+    text-align: center;
+    font-size: 48px;
+}
+.section_persons_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_persons_card_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF85A;
+   box-shadow: 5px 10px rgb(32, 32, 32);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.section_person_list_item {
+    display: block;
+}
+
+.item_position {
+    position: relative;
+    
+    
+}
+.item_img  {
+    width: 100%;
+}
+.img_position {
+    position: absolute;
+    bottom: -220px;
+    width: 400px;
+}
+.img_position1 {
+    position: absolute;
+    bottom: -150px;
+    width: 400px;
+}
+.img_position3 {
+    position: absolute;
+    bottom: -140px;
+    width: 400px;
+}
+.item_pic {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+}
+.item_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+}
+.item_name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 49px;
+}
+.item_description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 49px;
+}
+.card_margin {
+    margin-right: 20px;
+}
+.section_constr {
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+    background-color: #FFF85A;
+}
+.const_h1 {
+    color: black;
+}
+.card_back {
+    background-color:#464644;
+}
+.fon_col {
+    color: hsl(0, 0%, 71%);
+}
+.img_position4 {
+    position: absolute;
+    top:-25px
+}
