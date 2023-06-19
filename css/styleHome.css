@@ -15,7 +15,8 @@ ul{
 
 .first__section_content {
     display: flex; 
-    position: relative;
+    
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 3%;
     margin-left: 13%;
@@ -42,8 +43,7 @@ ul{
 
 }
 .first__section_text_2{
-    padding-left: 10%;
-    margin: auto;
+   
 }
 .first__section_text_3{
     padding-left: 0%;
@@ -53,8 +53,8 @@ h1 {
     font-family: 'Montserrat';
     font-style: bold;
     font-weight: 700;
-    font-size: 90px;
-    line-height: 100px;
+    font-size: 60px;
+    line-height: 70px;
     
     padding-top: 20px;
     padding-bottom: 50px;
@@ -83,7 +83,7 @@ p {
     line-height: 49px;
     color: #828282;
    
-    max-width: 600px;
+    max-width: 500px;
     max-height: 125px;
 }
 
