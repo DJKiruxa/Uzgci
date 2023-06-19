@@ -46,7 +46,7 @@ ul{
     margin: auto;
 }
 .first__section_text_3{
-    padding-left: 15%;
+    padding-left: 0%;
     margin: auto;
 }
 h1 {
@@ -79,11 +79,11 @@ p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 49px;
     color: #828282;
    
-    max-width: 538px;
+    max-width: 600px;
     max-height: 125px;
 }
 
